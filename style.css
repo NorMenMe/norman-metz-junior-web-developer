@@ -1,0 +1,146 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* common classes */
+
+.text-color {
+  filter: invert(36%) sepia(94%) saturate(326%) hue-rotate(167deg)
+    brightness(99%) contrast(91%);
+}
+
+.align-justify {
+  justify-content: center;
+  align-items: center;
+}
+
+/* end common classes */
+
+.background {
+  width: 100%;
+  height: 100vh;
+  background-color: #f1f1f1;
+}
+
+.wrapper-main {
+  width: 60%;
+  margin: auto;
+  padding-top: 9rem;
+  background-color: #f1f1f1;
+  /* outline: 2px solid red; */
+}
+
+/* navbar */
+
+.social-media-items {
+  width: 10rem;
+  justify-content: space-evenly;
+  /* outline: 2px solid red; */
+  position: relative;
+  bottom: 2.6rem;
+}
+
+.name-and-title {
+  /* outline: 2px solid red; */
+}
+
+.name-and-title p:first-child {
+  font-size: 2rem;
+  color: #3d75ab;
+}
+
+.name-and-title p:nth-child(2) {
+  font-size: 1.8rem;
+  position: relative;
+  bottom: 1rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* section mindset */
+
+.line-and-mindset {
+  position: relative;
+  top: 8rem;
+  /* outline: 2px solid red; */
+  justify-content: space-between;
+}
+
+.line {
+  border-top: 1px solid #3d75ab;
+  width: 37%;
+  position: relative;
+  top: 2rem;
+  /* outline: 2px solid red; */
+  width: 50%;
+}
+
+.mindset {
+  border: 1rem solid #f1f1f1;
+  width: 50%;
+}
+
+.mindset h1 {
+  color: #3d75ab;
+  font-size: 2.5rem;
+}
+
+.mindset p {
+  font-size: 1.8rem;
+}
+
+/* section selected works */
+
+.selected-works {
+  justify-content: space-evenly;
+  /* outline: 2px solid red; */
+  position: relative;
+  top: 23rem;
+  font-size: 1.8rem;
+}
+
+.u-refo p:first-child {
+  font-size: 1.5rem;
+}
+
+.u-refo p:nth-child(2) {
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.6);
+  position: relative;
+  bottom: 13px;
+}
+
+.u-refo a {
+  text-decoration: none;
+  color: #101010;
+  animation: pan 1s ease-in-out 2s;
+}
+
+.u-refo a:hover {
+  text-decoration: none;
+  color: #3d75ab;
+  z-index: 1;
+}
+
+.u-refo p:first-child:hover {
+  animation: pan 1s ease-in-out infinite;
+  color: #3d75ab;
+}
+
+@keyframes pan {
+  from {
+    transform: translateX(0rem);
+  }
+
+  to {
+    transform: translateX(5rem);
+  }
+}
